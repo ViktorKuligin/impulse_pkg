@@ -13,8 +13,6 @@ class TurtleFeedback(Node):
         self.pub = self.create_publisher(Twist, "/turtle1/cmd_vel", 10)
         self.sub = self.create_subscription(Pose, "/turtle1/pose", self.pose_cb, 10)
 
-        # self.tim = self.create_timer(0.1, self.timer)
-
     def pose_cb(self, msg: Pose):
         pose_x = msg.x
         pose_y = msg.y
@@ -28,12 +26,6 @@ class TurtleFeedback(Node):
             msg.linear.x = 0.5
             msg.angular.z = 0.5
         elif pose_x < 2.0:
-            msg.linear.x = 0.5
-            msg.angular.z = 0.5
-        elif pose_y > 9.0:
-            msg.linear.x = 0.5
-            msg.angular.z = 0.5
-        elif pose_y < 2.0:
             msg.linear.x = 0.5
             msg.angular.z = 0.5
         else:
