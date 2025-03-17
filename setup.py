@@ -28,6 +28,8 @@ setup(
             "ex_turtle_pub_node = impulse_pkg.ex_turtle_pub:main",
             "ex_turtle_sub_node = impulse_pkg.ex_turtle_sub:main",
             "ex_turtle_feedback_node = impulse_pkg.ex_turtle_feedback:main",
+
+            "rviz_point_node = impulse_pkg.rviz_1_point:main",
         ],
     },
 )
