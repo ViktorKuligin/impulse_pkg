@@ -30,6 +30,10 @@ setup(
             "ex_turtle_feedback_node = impulse_pkg.ex_turtle_feedback:main",
 
             "rviz_point_node = impulse_pkg.rviz_1_point:main",
+            "rviz_pose_node = impulse_pkg.rviz_2_pose:main",
+            "rviz_geom_node = impulse_pkg.rviz_3_marker_geom:main",
+            "rviz_text_node = impulse_pkg.rviz_4_marker_text:main",
+
         ],
     },
 )
