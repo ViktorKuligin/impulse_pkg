@@ -26,10 +26,10 @@ def generate_launch_description():
         executable= 'con_1_rviz_node',
         name= 'rviz_marker',
 
-        # parameters=[{
-        #     "object_color": "green",
-        #     "screen": True,
-        # }]
+        parameters=[{
+            "object_color": "green",
+            "screen": True,
+        }]
 
     )
 
