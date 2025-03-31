@@ -1,3 +1,6 @@
+import os                                                # by launch
+from glob import glob                                    # by launch
+
 from setuptools import find_packages, setup
 
 package_name = 'impulse_pkg'
@@ -10,6 +13,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name), glob('launch/*.launch.py')), # by launch
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -33,6 +37,9 @@ setup(
             "rviz_pose_node = impulse_pkg.rviz_2_pose:main",
             "rviz_geom_node = impulse_pkg.rviz_3_marker_geom:main",
             "rviz_text_node = impulse_pkg.rviz_4_marker_text:main",
+
+            "con_1_convert_node = impulse_pkg.control_1a_converter:main",
+            "con_1_rviz_node = impulse_pkg.control_1b_rviz:main",
 
         ],
     },
