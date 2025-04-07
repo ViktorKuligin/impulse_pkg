@@ -8,30 +8,13 @@ def generate_launch_description():
     tx_node = Node(
         package= 'impulse_pkg',
         executable= 'ex_publisher_node',     # name node in pkg writen in setup.py
-        name= 'tx',                                # new node name
-        # remappings= [                              # change topic name
-        #     ('/msg', '/topic_msg'),
-        #     # ('/topic_name_1','/new_topic_name_1'),
-        #     # ('/topic_name_2','/new_topic_name_2'),
-        # ]
-        parameters=[{
-            # "topic_name":"message",
-            # "timer_period": 0.2,
-            # "print_available": True,
-            # "fix_data": 45,
-        }]
+        name= 'tx',                          # new node name
     )
 
     rx_node = Node(
         package= 'impulse_pkg',
         executable= 'ex_subscriber_node',
         name= 'rx',
-        # remappings= [
-        #     ('/msg', '/topic_msg'),
-        #     # ('/topic_name_1','/new_topic_name_1'),
-        #     # ('/topic_name_2','/new_topic_name_2'),
-        # ]
-
     )
 
     ld.add_action(tx_node)

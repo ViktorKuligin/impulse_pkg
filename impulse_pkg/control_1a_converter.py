@@ -14,7 +14,7 @@ class converter(Node):
         self.get_logger().warn("converter key start")
 
         self.declare_parameter('velocity', 0.01)
-        self.declare_parameter('screen', False)
+        self.declare_parameter('screen', True)
 
         self.velocity = self.get_parameter('velocity').get_parameter_value().double_value
         self.screen = self.get_parameter('screen').get_parameter_value().bool_value
