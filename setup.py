@@ -41,6 +41,11 @@ setup(
             "con_1_convert_node = impulse_pkg.control_1a_converter:main",
             "con_1_rviz_node = impulse_pkg.control_1b_rviz:main",
 
+            "num_keyboard_node = impulse_pkg.num_keyboard:main",
+            "con_3_main_node = impulse_pkg.control_3_main:main",
+            "con_3_object_node = impulse_pkg.control_3_object:main",
+            "con_3_goal_node = impulse_pkg.control_3_goal:main",
+
         ],
     },
 )
