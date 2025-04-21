@@ -21,22 +21,39 @@ def generate_launch_description():
         ),
         Node(
             package= 'impulse_pkg',
+            executable= 'num_keyboard_node',
+            name= 'keyboard',
+        ),
+        Node(
+            package= 'impulse_pkg',
             executable= 'con_3_main_node',
             name= 'main_node',
-            # parameters=[{
-            #     "velocity": 0.02,
-            #     "screen": False,
-            # }]
+            parameters=[{
+                "velocity": 1.0,
+                "screen": False,
+            }]
         ),
         Node(
             package= 'impulse_pkg',
             executable= 'con_3_object_node',
             name= 'object',
-            # parameters=[{
-            #     "object_color": "green",
-            #     "object_type": "cylinder",
-            #     "object_scale": 1.0,
-            #     "screen": True,
-            # }]
-        )
+            parameters=[{
+                "object_color": "green",
+                "object_type": "cylinder",
+                "object_scale": 0.2,
+                "screen": True,
+            }]
+        ),
+        Node(
+            package= 'impulse_pkg',
+            executable= 'con_3_goal_node',
+            name= 'goal',
+            parameters=[{
+                "goal_color_on": "green",
+                "goal_color_off": "red",
+                "goal_type": "sphere",
+                "goal_scale": 1.0,
+                "screen": True,
+            }]
+        ),
     ])

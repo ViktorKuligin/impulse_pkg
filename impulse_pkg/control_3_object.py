@@ -22,12 +22,12 @@ geom = {
     "arrow": Marker.ARROW,
 }
 
-class rviz_xy(Node):
+class object(Node):
 
     def __init__(self):
 
-        super().__init__('rviz_xy')
-        self.get_logger().warn("rviz xy start")
+        super().__init__('object')
+        self.get_logger().warn("object start")
 
         self.declare_parameter('object_color', 'red')
         self.declare_parameter('object_type', 'sphere')
@@ -69,7 +69,7 @@ class rviz_xy(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = rviz_xy()
+    node = object()
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
