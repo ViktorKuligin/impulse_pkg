@@ -46,6 +46,10 @@ setup(
             "con_3_object_node = impulse_pkg.control_3_object:main",
             "con_3_goal_node = impulse_pkg.control_3_goal:main",
 
+            "con_4_main_node = impulse_pkg.control_4_main:main",
+            "con_4_hunter_node = impulse_pkg.control_4_hunter:main",
+            "con_4_goal_node = impulse_pkg.control_4_goal:main",
+
         ],
     },
 )

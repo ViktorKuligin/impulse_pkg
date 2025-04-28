@@ -81,6 +81,8 @@ class JoyGreen(Node):
 
     def keyboard_timer(self):
         for event in pg.event.get():
+            if event.type == pg.QUIT:
+                pg.quit()
             if event.type == pg.KEYDOWN:
                 if event.scancode in button_scancode:
                     self.button_name = button_scancode.get(event.scancode)
