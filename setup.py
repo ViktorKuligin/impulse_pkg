@@ -37,6 +37,7 @@ setup(
             "rviz_pose_node = impulse_pkg.rviz_2_pose:main",
             "rviz_geom_node = impulse_pkg.rviz_3_marker_geom:main",
             "rviz_text_node = impulse_pkg.rviz_4_marker_text:main",
+            "rviz_car_2_sim = impulse_pkg.rviz_5_car_sim_2:main",
 
             "con_1_convert_node = impulse_pkg.control_1a_converter:main",
             "con_1_rviz_node = impulse_pkg.control_1b_rviz:main",
