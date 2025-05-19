@@ -123,7 +123,7 @@ class JoyGreen(Node):
         self.lin_xx = 0.0
         self.lin_yy = 0.0
         self.ang_zz = 0.0
-        
+
         self.car_xx = 0.0
         self.car_yy = 0.0
         self.car_angle_z = 0.0
@@ -139,7 +139,7 @@ class JoyGreen(Node):
         array = (10, 20, 580, 40)
         pg.draw.rect(screen, (0,0,0), array)
         txt = f'Mode: {button_mode.get(self.but_mode)}'
-        img = font.render(txt, True, (0, 0, 255))
+        img = font.render(txt, True, (255, 100, 0))
         screen.blit(img, (10, 20))
 
         pg.display.update()
@@ -155,7 +155,7 @@ class JoyGreen(Node):
                     array = (10, 20, 580, 40)
                     pg.draw.rect(screen, (0,0,0), array)
                     txt = f'Mode: {button_mode.get(self.but_mode)}'
-                    img = font.render(txt, True, (0, 0, 255))
+                    img = font.render(txt, True, (255, 100, 0))
                     screen.blit(img, (10, 20))
 
                 if self.but_mode == 0:
