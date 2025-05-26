@@ -137,7 +137,7 @@ class goal(Node):
         msg_out = Marker()
         msg_out.header.stamp = self.get_clock().now().to_msg()
         msg_out.header.frame_id = 'map'
-        msg_out.type = Marker.CUBE #geom.get(self.goal_type) # ARROW = 0 / CUBE = 1 / SPHERE = 2 / CYLINDER = 3 / TEXT_VIEW_FACING = 9
+        msg_out.type = Marker.ARROW #geom.get(self.goal_type) # ARROW = 0 / CUBE = 1 / SPHERE = 2 / CYLINDER = 3 / TEXT_VIEW_FACING = 9
         msg_out.pose.position = Point(x = self.hunter_x, y = self.hunter_y, z = 0.0)
 
         msg_out.pose.orientation = Quaternion(x = 0.0, y = 0.0, z = q[2], w = q[3])

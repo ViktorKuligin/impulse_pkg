@@ -52,6 +52,8 @@ setup(
             "con_4_hunter2_node = impulse_pkg.control_4_hunter_2:main",
             "con_4_goal_node = impulse_pkg.control_4_goal:main",
 
+            "alg_a_node = impulse_pkg.alg_1:main",
+
         ],
     },
 )
